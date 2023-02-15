@@ -32,6 +32,7 @@ export function Accordion ({value}) {
                                                 key={i}
                                                 id={`product-${i}`}>
                                                 <p> {e.name} </p>
+                                                <div className="accordian__product-quantity">
                                                 <button onClick={()=>{itemsToBuy(true,e,i,products)}}> + </button>
                                                 <p>
                                                   { preCart.length > 0 ? 
@@ -39,6 +40,7 @@ export function Accordion ({value}) {
                                                     0 }
                                                 </p>
                                                 <button onClick={()=>{itemsToBuy(false,e,i,products)}}> - </button>
+                                                </div>
                                               </div>
                 })}
               <button id="addToCart" onClick={addToCart}>Añadir e ir al carrito</button> 
