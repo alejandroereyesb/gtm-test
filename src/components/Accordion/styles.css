@@ -38,3 +38,10 @@
     from {height: 0px;}
     to {height: 100%;}
   } */
+
+  .accordian__product-quantity{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+  }
